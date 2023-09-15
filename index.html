@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PennyLink</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+
+</head>
+<body>
+    <div class="container">
+        <div class="image__container">
+            <!-- Add an image here -->
+            <!-- <img src="Assets/13678507_5172140.jpg" alt=""> -->
+        </div>
+
+
+        <div class="form__container">
+            <form action="">
+              <h2>PennyLink</h2>
+              <label for="username" class="pushdown">Username:</label>
+              <input type="text" name="text" id="username" placeholder="John Doe">
+              <label for="password">Password:</label>
+              <input type="password" id="userpassword" placeholder="password">
+              <button type="button" onclick="login()" id="login-btn"> Login </button>
+              <p id="signup-container">if you don't have an account <a onclick="showPopUpForm()" id="show-PopUp">Sign Up</a></p>
+            </form>
+          </div>
+          
+          <div class="form__container hide" id="PopUpform__container">
+            
+            <form action="">
+              <h2>PennyLink</h2>
+              <label for="Email" class="pushdown">Email:</label>
+              <input type="email" name="text" id="email" placeholder="johndoe@gmail.com">
+              <label for="username">Username:</label>
+              <input type="text" name="text" id="username-signup" placeholder="John Doe">
+              <label for="password">Password:</label>
+              <input type="password" id="userpassword-signup" placeholder="password">
+              <button type="button" id="signup-btn" onclick="signUp()">Sign Up</button>
+              <p id="signin-container">if you already have an account <a onclick="hidePopUpForm()" id="hide-PopUp">Sign In</a></p>
+            </form>
+          </div>
+          
+    </div>
+</body>
+<script src="app.js"></script>
+</html>

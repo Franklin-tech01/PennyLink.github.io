@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }
+  .card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .card-info {
+    color: #888;
+    font-size: 16px;
+  }
+</style>
+<title>Virtual Card Design</title>
+</head>
+<body>
+  <div class="card">
+    <h2 class="card-title">John Doe</h2>
+    <p class="card-info">Card Number: 1234 5678 9012 3456</p>
+    <p class="card-info">Expires: 12/25</p>
+  </div>
+</body>
+</html>
+
+    <img src="card-image.jpg" alt="Card Image">

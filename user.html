@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title"></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+
+</head>
+
+<body class="user__dashboard">
+
+    <div class="user__nav">
+        <h1>PennyLink</h1>
+        <div class="user__profile">
+            <img src="Assets/avatar-shanai.png" alt="">
+            <p id="loggedInUser"></p>
+            <!-- <p id="loggedInUser"></p> -->
+        </div>
+
+        <div class="user_list">
+            <ul class="navlinks">
+                <li><a href="">Accounts</a></li>
+                <li><a href="">Transactions</a></li>
+                <li><a href="">Bonus</a></li>
+                <li><a href="">Investments</a></li>
+            </ul>
+        </div>
+
+        <div class="user__settings">
+            <ul>
+                <li><a href="">settings</a></li>
+            </ul>
+            <button id="sign-out" onclick="signOutUser()"> sign out</button>
+        </div>
+
+    </div>
+
+    <div class="user__section">
+        <div class="user__balance glass-container">
+            <p id="displayUsername"> </p>
+
+            <h3>Your Balance</h3>
+
+            <p id="accountBalance"> <span id="currency">usd</span></p>
+            <button id="send-money">Withdraw</button>
+            <button id="deposit-money">Deposit</button>
+        </div>
+
+        <div class="user__transactions">
+            <h3>Your transactions</h3>
+
+            <div class="transactions__container">
+
+                <div class="transaction__details">
+                    <div class="transaction__profile">
+                        <img src="Assets/avatar-shanai.png" alt="">
+                        <p id="User-id">Babe</p>
+                        <p class="amount__sent">-$2,000</p>
+                    </div>
+                    <!-- </div> -->
+                    <div class="transaction__details">
+                        <div class="transaction__profile">
+                            <img src="Assets/avatar-shanai.png" alt="">
+                            <p id="User-id">Netflix</p>
+                            <p class="amount__sent">-$2,000</p>
+                        </div>
+                    </div>
+                    <div class="transaction__details">
+                        <div class="transaction__profile">
+                            <img src="Assets/avatar-shanai.png" alt="">
+                            <p id="User-id">Bolt</p>
+                            <p class="amount__sent">-$2,000</p>
+                        </div>
+                    </div>
+                    <div class="transaction__details">
+                        <div class="transaction__profile">
+                            <img src="Assets/avatar-shanai.png" alt="">
+                            <p id="User-id">Bolt</p>
+                            <p class="amount__sent">-$2,000</p>
+                        </div>
+                    </div>
+                    <div class="transaction__details">
+                        <div class="transaction__profile">
+                            <img src="Assets/avatar-shanai.png" alt="">
+                            <p id="User-id">Bolt</p>
+                            <p class="amount__sent">-$2,000</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="virtual__cards--apiarea">
+
+        <div class="cards-container">
+            <!-- <div class="card">
+                <div class="logo">
+                    <h2 class="card-title"></h2>
+                    <img src="Assets/mastercard-26161.png" alt="">
+                </div> -->
+            <!-- <img src="Assets/avatar-shanai.png" alt="Card Image"> -->
+
+            <!-- <P class="card-amount">$4,230.00</P> -->
+            <!-- <p class="card-info">Card Number: 1234 5678 9012 3456</p>
+                <p class="card-info">Expires: 12/25</p>
+            </div> -->
+        </div>
+        <button id="createNewCard">new card??</button>
+    </div>
+
+    <script>
+
+
+        // Retrieve the username from localStorage
+        var username = localStorage.getItem("username-signup");
+
+        // Update the welcome message
+        var welcomeMsg = document.getElementById("loggedInUser");
+        welcomeMsg.innerText = `Hi, ${username}`;
+
+        var displayUser = document.getElementById("displayUsername")
+        var greetings = "Welcome "
+
+        displayUser.textContent = ` ${greetings} ${username}`
+
+        var pageTitle = document.getElementById('title')
+        pageTitle.textContent = `${username}`
+
+    </script>
+
+</body>
+<script src="createNewcard.js"></script>
+<script src="amount.js"></script>
+<script type="module" src="app.js"></script>
+
+</html>

@@ -254,9 +254,7 @@ form p > a {
   font-size: 2.3rem;
 }
 
-.user__profile {
-  /* padding-top: 50px; */
-}
+
 
 #loggedInUser {
   font-size: 1.7rem;
@@ -434,10 +432,7 @@ form p > a {
 }
 
 .transaction__profile {
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 20px; */
+ justify-content: center;
   display: flex;
   /* flex-direction: column; */
   align-items: center;

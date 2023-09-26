@@ -15,14 +15,17 @@
     <div class="user__nav">
         <h1>PennyLink</h1>
         <div class="user__profile">
-            <img src="Assets/avatar-shanai.png" alt="">
+            <div class="profile__image--container">
+
+                <img src="Assets/avatar-shanai.png" alt="">
+            </div>
             <p id="loggedInUser"></p>
             <!-- <p id="loggedInUser"></p> -->
         </div>
 
         <div class="user_list">
             <ul class="navlinks">
-                <li><a href="">Accounts</a></li>
+                <li><a target="_blank" href="Account/account.html">Accounts</a></li>
                 <li><a href="">Transactions</a></li>
                 <li><a href="">Bonus</a></li>
                 <li><a href="">Investments</a></li>
@@ -33,7 +36,7 @@
             <ul>
                 <li><a href="">settings</a></li>
             </ul>
-            <button id="sign-out" onclick="signOutUser()"> sign out</button>
+            <button type="button" id="sign-out" onclick="signOutUser()"> < sign out</button>
         </div>
 
     </div>
@@ -136,6 +139,6 @@
 </body>
 <script src="createNewcard.js"></script>
 <script src="amount.js"></script>
-<script type="module" src="app.js"></script>
+<script  src="app.js"></script>
 
 </html>

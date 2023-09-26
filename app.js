@@ -4,10 +4,6 @@
 // displayBalance();
 // generateVirtualCards();
 
-const amountModule = import('./amount.js')
-amountModule.displayBalance();
-
-
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -60,8 +56,10 @@ function login() {
   }
 }
 
+
+
 function signOutUser() {
-  location.href = "index.html";
+  window.location.href = "index.html";
 }
 
 function showPopUpForm() {
@@ -81,7 +79,3 @@ function hidePopUpForm() {
       .getElementById("PopUpform__container")
       .classList.add("hide");
 }
-
-
-
-
